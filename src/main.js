@@ -126,7 +126,7 @@ function hideLoading() {
 // --- Оптимизированная визуализация городов (объединение геометрии) ---
 async function loadCities() {
   showLoading();
-  fetch('./public/worldcities.json')
+  fetch('worldcities.json')
     .then(res => res.json())
     .then(citiesData => {
       hideLoading();
